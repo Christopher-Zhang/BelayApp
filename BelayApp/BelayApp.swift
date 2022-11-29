@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct BelayAppApp: App {
+struct BelayApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

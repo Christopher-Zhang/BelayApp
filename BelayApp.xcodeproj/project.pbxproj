@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1297CFE2290E3FDB0054A9D4 /* BelayAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1297CFE1290E3FDB0054A9D4 /* BelayAppApp.swift */; };
+		1297CFE2290E3FDB0054A9D4 /* BelayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1297CFE1290E3FDB0054A9D4 /* BelayApp.swift */; };
 		1297CFE4290E3FDB0054A9D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1297CFE3290E3FDB0054A9D4 /* ContentView.swift */; };
 		1297CFE6290E3FDC0054A9D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1297CFE5290E3FDC0054A9D4 /* Assets.xcassets */; };
 		1297CFE9290E3FDC0054A9D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1297CFE8290E3FDC0054A9D4 /* Preview Assets.xcassets */; };
+		129DE6B22920B9EC0017FC01 /* Background.svg in Resources */ = {isa = PBXBuildFile; fileRef = 129DE6B12920B9EC0017FC01 /* Background.svg */; };
+		129DE6B42920DEED0017FC01 /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DE6B32920DEED0017FC01 /* Bluetooth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1297CFDE290E3FDB0054A9D4 /* BelayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BelayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1297CFE1290E3FDB0054A9D4 /* BelayAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelayAppApp.swift; sourceTree = "<group>"; };
+		1297CFE1290E3FDB0054A9D4 /* BelayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelayApp.swift; sourceTree = "<group>"; };
 		1297CFE3290E3FDB0054A9D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1297CFE5290E3FDC0054A9D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1297CFE8290E3FDC0054A9D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		129DE6B12920B9EC0017FC01 /* Background.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Background.svg; sourceTree = "<group>"; };
+		129DE6B32920DEED0017FC01 /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
+		129DE6B7292109DC0017FC01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +56,11 @@
 		1297CFE0290E3FDB0054A9D4 /* BelayApp */ = {
 			isa = PBXGroup;
 			children = (
-				1297CFE1290E3FDB0054A9D4 /* BelayAppApp.swift */,
+				129DE6B7292109DC0017FC01 /* Info.plist */,
+				129DE6B12920B9EC0017FC01 /* Background.svg */,
+				1297CFE1290E3FDB0054A9D4 /* BelayApp.swift */,
 				1297CFE3290E3FDB0054A9D4 /* ContentView.swift */,
+				129DE6B32920DEED0017FC01 /* Bluetooth.swift */,
 				1297CFE5290E3FDC0054A9D4 /* Assets.xcassets */,
 				1297CFE7290E3FDC0054A9D4 /* Preview Content */,
 			);
@@ -127,6 +135,7 @@
 			files = (
 				1297CFE9290E3FDC0054A9D4 /* Preview Assets.xcassets in Resources */,
 				1297CFE6290E3FDC0054A9D4 /* Assets.xcassets in Resources */,
+				129DE6B22920B9EC0017FC01 /* Background.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1297CFE4290E3FDB0054A9D4 /* ContentView.swift in Sources */,
-				1297CFE2290E3FDB0054A9D4 /* BelayAppApp.swift in Sources */,
+				129DE6B42920DEED0017FC01 /* Bluetooth.swift in Sources */,
+				1297CFE2290E3FDB0054A9D4 /* BelayApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +282,9 @@
 				DEVELOPMENT_TEAM = Z3872HUGB6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BelayApp/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Please allow always use to avoid disconnects";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Please allow Bluetooth to find device";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +314,9 @@
 				DEVELOPMENT_TEAM = Z3872HUGB6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BelayApp/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Please allow always use to avoid disconnects";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Please allow Bluetooth to find device";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
